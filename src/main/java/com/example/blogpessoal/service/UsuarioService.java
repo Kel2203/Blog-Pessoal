@@ -38,7 +38,7 @@ public class UsuarioService {
         return Optional.of(usuarioRepository.save(usuario));
 
     }
-//teste fot git
+
     public Optional<Usuario> atualizarUsuario(Usuario usuario) {
 
         if(usuarioRepository.findById(usuario.getId()).isPresent()) {
