@@ -3,6 +3,7 @@ package com.example.blogpessoal.controller;
 import com.example.blogpessoal.model.Usuario;
 import com.example.blogpessoal.model.UsuarioLogin;
 import com.example.blogpessoal.repository.UsuarioRepository;
+import com.example.blogpessoal.service.UsuarioService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
