@@ -9,3 +9,4 @@
 
 - CRUD
 - JWT
+- JUnit
