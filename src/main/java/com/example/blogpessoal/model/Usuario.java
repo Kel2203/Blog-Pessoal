@@ -1,6 +1,7 @@
 package com.example.blogpessoal.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -22,6 +23,7 @@ public class Usuario {
     private String nome;
     @NotNull(message = "Você precisa digitar um email")
     @Email(message="O atributo usuario requer um email válido!")
+    @Schema(example = "email@email.com.br")
     private String usuario;
     @NotBlank(message = "Você precisa digitar uma senha")
     @Size(min=8, message = "minimo de 8 caracteres")
